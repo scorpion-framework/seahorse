@@ -1,0 +1,11 @@
+doctype html
+html
+	head
+		title Register
+		meta(charset='utf-8')
+		line(rel='stylesheet', href='file:///C:/Users/MARCO/Documents/GitHub/chips/dist/chips.css')
+	body
+		form(method='POST', action='register')
+			input(name='username', type='text', placeholder='username', class='chip m')
+			input(name='password', type='password', placeholder='password')
+			button(type='submit') register

@@ -1,0 +1,7 @@
+name "seahorse"
+description "Authentication and account management system for scorpion"
+license "MIT"
+dependency "scorpion" path="../scorpion"
+dependency "scorpion-bootstrap" path="../scorpion-bootstrap"
+dependency "scorpion-chips" path="../scorpion-chips"
+dependency "scorpion-material-design-icons" path="../scorpion-material-design-icons"

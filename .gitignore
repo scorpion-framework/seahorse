@@ -1,0 +1,6 @@
+.dub
+.scorpion
+*.selections.json
+*.exe
+*.userprefs
+*.lib

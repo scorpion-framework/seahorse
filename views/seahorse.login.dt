@@ -1,0 +1,27 @@
+doctype html
+html
+	head
+		title Login
+		meta(charset='utf-8')
+		link(rel='stylesheet', href='/assets/bootstrap/bootstrap-grid.min.css')
+		link(rel='stylesheet', href='/assets/chips/chips.css')
+		link(rel='stylesheet', href='/assets/material-design-icons/material-icons.css')
+	body
+		div(class='container')
+			div(class='row justify-content-md-center')
+				div(class='col-md-auto')
+					- if(session.loggedIn)
+						p You are already logged in
+					- else 
+						form(method='POST')
+							div(class='chip-group')
+								label(class='chip l attach-right')
+									i(class='material-icons chip-icon') face
+									span Username
+								input(name='username', class='chip l outline attach-left')
+							div(class='chip-group')
+								label(class='chip l attach-right')
+									i(class='material-icons chip-icon') vpn_key
+									span Password
+								input(name='password', class='chip l outline attach-left', type='password')
+							button(class='chip l') Login
